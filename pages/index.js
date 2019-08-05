@@ -1,5 +1,10 @@
-export default () => <div>Hello World!</div>;
+import TheNav from '../components/TheNav';
+import '../assets/sass/styles.scss';
 
-const a = 'whatever';
-
-const b = 'test';
+export default () => (
+  <div>
+    <TheNav />
+    <div className="testing"> Som eextra</div>
+    <div className="testing">Hello World!</div>
+  </div>
+);
