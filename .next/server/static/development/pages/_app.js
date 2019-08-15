@@ -106,9 +106,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _TheHead__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TheHead */ "./components/TheHead.js");
-/* harmony import */ var _TheNav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TheNav */ "./components/TheNav.js");
-/* harmony import */ var _TheFooter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TheFooter */ "./components/TheFooter.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! nprogress */ "nprogress");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _TheHead__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TheHead */ "./components/TheHead.js");
+/* harmony import */ var _TheNav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./TheNav */ "./components/TheNav.js");
+/* harmony import */ var _TheFooter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./TheFooter */ "./components/TheFooter.js");
+
+
 
 
 
@@ -119,11 +125,11 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   render() {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "jsx-3511198362" + " " + "site"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheHead__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheNav__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheHead__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheNav__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
       className: "jsx-3511198362" + " " + "container"
-    }, this.props.children), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheFooter__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    }, this.props.children), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheFooter__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
       id: "3511198362"
-    }, ".site.jsx-3511198362{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:100vh;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}main.jsx-3511198362{-webkit-flex:1;-ms-flex:1;flex:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZWFuL2dpdGh1Yi9uZXh0LXR1dG9yaWFsL3NvY2lhbC9jb21wb25lbnRzL1BhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYW9CLEFBRzBCLEFBS04saUNBQ1QseUNBTG1CLGlCQUNLLDhFQUN4QiIsImZpbGUiOiIvVXNlcnMvZGVhbi9naXRodWIvbmV4dC10dXRvcmlhbC9zb2NpYWwvY29tcG9uZW50cy9QYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBUaGVIZWFkIGZyb20gJy4vVGhlSGVhZCc7XG5pbXBvcnQgVGhlTmF2IGZyb20gJy4vVGhlTmF2JztcbmltcG9ydCBUaGVGb290ZXIgZnJvbSAnLi9UaGVGb290ZXInO1xuXG5jbGFzcyBQYWdlIGV4dGVuZHMgQ29tcG9uZW50IHtcbiAgcmVuZGVyKCkge1xuICAgIHJldHVybiAoXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNpdGVcIj5cbiAgICAgICAgPFRoZUhlYWQgLz5cbiAgICAgICAgPFRoZU5hdiAvPlxuICAgICAgICA8bWFpbiBjbGFzc05hbWU9XCJjb250YWluZXJcIj57dGhpcy5wcm9wcy5jaGlsZHJlbn08L21haW4+XG4gICAgICAgIDxUaGVGb290ZXIgLz5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIC5zaXRlIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgfVxuICAgICAgICAgIG1haW4ge1xuICAgICAgICAgICAgZmxleDogMTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDwvZGl2PlxuICAgICk7XG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgUGFnZTtcbiJdfQ== */\n/*@ sourceURL=/Users/dean/github/next-tutorial/social/components/Page.js */"));
+    }, ".site.jsx-3511198362{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:100vh;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}main.jsx-3511198362{-webkit-flex:1;-ms-flex:1;flex:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZWFuL2dpdGh1Yi9uZXh0LXR1dG9yaWFsL3NvY2lhbC9jb21wb25lbnRzL1BhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZW9CLEFBRzBCLEFBS04saUNBQ1QseUNBTG1CLGlCQUNLLDhFQUN4QiIsImZpbGUiOiIvVXNlcnMvZGVhbi9naXRodWIvbmV4dC10dXRvcmlhbC9zb2NpYWwvY29tcG9uZW50cy9QYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBSb3V0ZXIgZnJvbSAnbmV4dC9yb3V0ZXInO1xuaW1wb3J0IE5Qcm9ncmVzcyBmcm9tICducHJvZ3Jlc3MnO1xuaW1wb3J0IFRoZUhlYWQgZnJvbSAnLi9UaGVIZWFkJztcbmltcG9ydCBUaGVOYXYgZnJvbSAnLi9UaGVOYXYnO1xuaW1wb3J0IFRoZUZvb3RlciBmcm9tICcuL1RoZUZvb3Rlcic7XG5cbmNsYXNzIFBhZ2UgZXh0ZW5kcyBDb21wb25lbnQge1xuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2l0ZVwiPlxuICAgICAgICA8VGhlSGVhZCAvPlxuICAgICAgICA8VGhlTmF2IC8+XG4gICAgICAgIDxtYWluIGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPnt0aGlzLnByb3BzLmNoaWxkcmVufTwvbWFpbj5cbiAgICAgICAgPFRoZUZvb3RlciAvPlxuICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgLnNpdGUge1xuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgICAgICB9XG4gICAgICAgICAgbWFpbiB7XG4gICAgICAgICAgICBmbGV4OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgPC9kaXY+XG4gICAgKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBQYWdlO1xuIl19 */\n/*@ sourceURL=/Users/dean/github/next-tutorial/social/components/Page.js */"));
   }
 
 }
@@ -182,6 +188,10 @@ react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IM
   rel: "stylesheet",
   type: "text/css",
   href: "/static/css/styles.css"
+}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+  rel: "stylesheet",
+  type: "text/css",
+  href: "/static/css/nprogress.css"
 }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "This is a test")));
 
 /***/ }),
@@ -1302,6 +1312,28 @@ module.exports = require("next-server/dist/lib/utils");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "nprogress":
+/*!****************************!*\
+  !*** external "nprogress" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("nprogress");
 
 /***/ }),
 

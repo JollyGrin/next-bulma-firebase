@@ -10,6 +10,7 @@ export default () => (
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/nprogress.css" />
     <title>This is a test</title>
   </Head>
 );

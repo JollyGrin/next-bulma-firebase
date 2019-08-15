@@ -12,7 +12,7 @@ app
 
     server.get('/blog/:slug', (req, res) => {
       const actualPage = '/blog';
-      const query = { id: req.params.slug };
+      const query = { slug: req.params.slug };
       app.render(req, res, actualPage, query);
     });
 

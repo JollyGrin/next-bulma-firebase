@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 import TheHead from './TheHead';
 import TheNav from './TheNav';
 import TheFooter from './TheFooter';

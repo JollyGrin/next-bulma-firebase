@@ -21,7 +21,7 @@ export default class BlogItem extends Component {
           <p className="has-text-centered is-size-5 blog-intro">{intro}</p>
           <div>
             <div className="is-pulled-right is-size-7">
-              <Link as={`/blog/${slug}`} href={`/blog?id=${id}`}>
+              <Link as={`/blog/${slug}`} href={`/blog?slug=${slug}`}>
                 <a>Read More</a>
               </Link>
             </div>
