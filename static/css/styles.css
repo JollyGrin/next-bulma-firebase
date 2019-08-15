@@ -1,5 +1,5 @@
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -6960,3 +6960,6 @@ label.panel-block {
 html,
 body {
   font-family: 'Nunito', 'Open Sans', sans-serif; }
+
+.pointer {
+  cursor: pointer; }

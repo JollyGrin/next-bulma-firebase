@@ -109,7 +109,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TheHead__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TheHead */ "./components/TheHead.js");
 /* harmony import */ var _TheNav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TheNav */ "./components/TheNav.js");
 /* harmony import */ var _TheFooter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TheFooter */ "./components/TheFooter.js");
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/components/Page.js";
 
 
 
@@ -119,40 +118,11 @@ var _jsxFileName = "/Users/dean/github/next-tutorial/social/components/Page.js";
 class Page extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   render() {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "jsx-3511198362" + " " + "site",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheHead__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheNav__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
-      className: "jsx-3511198362" + " " + "container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, this.props.children), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheFooter__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-      id: "3511198362",
-      __self: this
+      className: "jsx-3511198362" + " " + "site"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheHead__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheNav__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
+      className: "jsx-3511198362" + " " + "container"
+    }, this.props.children), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_TheFooter__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+      id: "3511198362"
     }, ".site.jsx-3511198362{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:100vh;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}main.jsx-3511198362{-webkit-flex:1;-ms-flex:1;flex:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZWFuL2dpdGh1Yi9uZXh0LXR1dG9yaWFsL3NvY2lhbC9jb21wb25lbnRzL1BhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYW9CLEFBRzBCLEFBS04saUNBQ1QseUNBTG1CLGlCQUNLLDhFQUN4QiIsImZpbGUiOiIvVXNlcnMvZGVhbi9naXRodWIvbmV4dC10dXRvcmlhbC9zb2NpYWwvY29tcG9uZW50cy9QYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBUaGVIZWFkIGZyb20gJy4vVGhlSGVhZCc7XG5pbXBvcnQgVGhlTmF2IGZyb20gJy4vVGhlTmF2JztcbmltcG9ydCBUaGVGb290ZXIgZnJvbSAnLi9UaGVGb290ZXInO1xuXG5jbGFzcyBQYWdlIGV4dGVuZHMgQ29tcG9uZW50IHtcbiAgcmVuZGVyKCkge1xuICAgIHJldHVybiAoXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNpdGVcIj5cbiAgICAgICAgPFRoZUhlYWQgLz5cbiAgICAgICAgPFRoZU5hdiAvPlxuICAgICAgICA8bWFpbiBjbGFzc05hbWU9XCJjb250YWluZXJcIj57dGhpcy5wcm9wcy5jaGlsZHJlbn08L21haW4+XG4gICAgICAgIDxUaGVGb290ZXIgLz5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIC5zaXRlIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgfVxuICAgICAgICAgIG1haW4ge1xuICAgICAgICAgICAgZmxleDogMTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDwvZGl2PlxuICAgICk7XG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgUGFnZTtcbiJdfQ== */\n/*@ sourceURL=/Users/dean/github/next-tutorial/social/components/Page.js */"));
   }
 
@@ -173,36 +143,14 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/components/TheFooter.js";
 
 /* harmony default export */ __webpack_exports__["default"] = (() => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
-  className: "footer",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
+  className: "footer"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: "container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
+  className: "container"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: "content has-text-centered",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, "This is the best thing since sliced bread")))));
+  className: "content has-text-centered"
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This is the best thing since sliced bread")))));
 
 /***/ }),
 
@@ -219,55 +167,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/components/TheHead.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (() => // eslint-disable-next-line no-unused-expressions
-react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
   name: "viewport",
-  content: "width=device-width,initial-scale=1",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
+  content: "width=device-width,initial-scale=1"
 }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-  charSet: "utf-8",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
+  charSet: "utf-8"
 }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
   href: "https://fonts.googleapis.com/icon?family=Material+Icons",
-  rel: "stylesheet",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
+  rel: "stylesheet"
 }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
   rel: "stylesheet",
   type: "text/css",
-  href: "/static/css/styles.css",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}, "This is a test")));
+  href: "/static/css/styles.css"
+}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "This is a test")));
 
 /***/ }),
 
@@ -284,141 +199,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/components/TheNav.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (() => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
   className: "navbar",
   role: "navigation",
-  "aria-label": "main navigation",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
+  "aria-label": "main navigation"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: "navbar-brand",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
+  className: "navbar-brand"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   role: "button",
   className: "navbar-burger burger",
   "aria-label": "menu",
   "aria-expanded": "false",
-  "data-target": "navbarBasicExample",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
+  "data-target": "navbarBasicExample"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-  "aria-hidden": "true",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
+  "aria-hidden": "true"
 }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-  "aria-hidden": "true",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
+  "aria-hidden": "true"
 }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-  "aria-hidden": "true",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
+  "aria-hidden": "true"
 }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   id: "navbarBasicExample",
-  className: "navbar-menu",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
+  className: "navbar-menu is-active"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: "navbar-start",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
+  className: "navbar-start"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21
-  },
-  __self: undefined
+  href: "/"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  className: "navbar-item",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 22
-  },
-  __self: undefined
+  className: "navbar-item"
 }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/about",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 24
-  },
-  __self: undefined
+  href: "/about"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  className: "navbar-item",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 25
-  },
-  __self: undefined
+  className: "navbar-item"
 }, "About"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: "navbar-end",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 29
-  },
-  __self: undefined
+  className: "navbar-end"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: "navbar-item",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 30
-  },
-  __self: undefined
+  className: "navbar-item"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: "buttons",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 31
-  },
-  __self: undefined
+  className: "buttons"
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  className: "button is-primary",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 32
-  },
-  __self: undefined
-}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33
-  },
-  __self: undefined
-}, "Sign up")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  className: "button is-light",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 35
-  },
-  __self: undefined
+  className: "button is-primary"
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Sign up")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  className: "button is-light"
 }, "Log in")))))));
 
 /***/ }),
@@ -524,39 +347,6 @@ function _asyncToGenerator(fn) {
 }
 
 module.exports = _asyncToGenerator;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
-
-function _extends() {
-  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
 
 /***/ }),
 
@@ -1353,19 +1143,16 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
-/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Page */ "./components/Page.js");
-
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/pages/_app.js";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Page */ "./components/Page.js");
 
 
 
 
-class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
+class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
   static async getInitialProps({
     Component,
     router,
@@ -1387,25 +1174,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
       Component,
       pageProps
     } = this.props;
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_2__["Container"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
-    }))));
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, pageProps)));
   }
 
 }

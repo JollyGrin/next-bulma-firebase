@@ -4,9 +4,8 @@
   "description": "testing next",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "next start",
-    "dev": "next",
+    "start": "NODE_ENV=production node server.js",
+    "dev": "node server.js",
     "build": "next build",
     "css:build": "node-sass --omit-source-map-url assets/sass/styles.scss static/css/styles.css",
     "css:watch": "npm run css:build -- --watch"

@@ -10,6 +10,12 @@ app
   .then(() => {
     const server = express();
 
+    server.get('/blog/:slug', (req, res) => {
+      const actualPage = '/blog';
+      const query = { id: req.params.slug };
+      app.render(req, res, actualPage, query);
+    });
+
     server.get('*', (req, res) => {
       return handle(req, res);
     });

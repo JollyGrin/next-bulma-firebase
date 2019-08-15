@@ -1,3 +1,4 @@
+import TheNav from '../components/TheNav';
 import React, { Component } from 'react';
 
 class blog extends Component {

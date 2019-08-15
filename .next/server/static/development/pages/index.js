@@ -110,7 +110,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _DateFormatter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DateFormatter */ "./components/DateFormatter.js");
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/components/BlogItem.js";
 
 
 
@@ -125,100 +124,33 @@ class BlogItem extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       id,
       slug
     } = this.props.blog;
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "jsx-3248910077" + " " + "content is-medium blog"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "jsx-3248910077" + " " + "content is-medium blog",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "jsx-3248910077",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
+      className: "jsx-3248910077"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
-      className: "jsx-3248910077" + " " + "title has-text-centered",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
+      className: "jsx-3248910077" + " " + "title has-text-centered"
     }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: "jsx-3248910077" + " " + "subtitle is-6 has-text-centered",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
+      className: "jsx-3248910077" + " " + "subtitle is-6 has-text-centered"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "#",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
+      href: "#"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      className: "jsx-3248910077",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
+      className: "jsx-3248910077"
     }, "@jollygrin")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_DateFormatter__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      timestamp: createdAt,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
+      timestamp: createdAt
     }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      className: "jsx-3248910077" + " " + "has-text-centered is-size-5 blog-intro",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
+      className: "jsx-3248910077" + " " + "has-text-centered is-size-5 blog-intro"
     }, intro), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "jsx-3248910077",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
+      className: "jsx-3248910077"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "jsx-3248910077" + " " + "is-pulled-right is-size-7",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
+      className: "jsx-3248910077" + " " + "is-pulled-right is-size-7"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       as: `/blog/${slug}`,
-      href: `/blog?id=${id}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
+      href: `/blog?id=${id}`
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      className: "jsx-3248910077",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
+      className: "jsx-3248910077"
     }, "Read More"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-      id: "3248910077",
-      __self: this
+      id: "3248910077"
     }, ".blog.jsx-3248910077{padding-bottom:2rem;border-bottom:2px solid whitesmoke;}.blog-intro.jsx-3248910077{margin-top:2rem;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZWFuL2dpdGh1Yi9uZXh0LXR1dG9yaWFsL3NvY2lhbC9jb21wb25lbnRzL0Jsb2dJdGVtLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQThCb0IsQUFHaUMsQUFJSixnQkFDbEIsSUFKcUMsbUNBQ3JDIiwiZmlsZSI6Ii9Vc2Vycy9kZWFuL2dpdGh1Yi9uZXh0LXR1dG9yaWFsL3NvY2lhbC9jb21wb25lbnRzL0Jsb2dJdGVtLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCwgRnJhZ21lbnQgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xuaW1wb3J0IERhdGVGb3JtYXR0ZXIgZnJvbSAnLi9EYXRlRm9ybWF0dGVyJztcblxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgQmxvZ0l0ZW0gZXh0ZW5kcyBDb21wb25lbnQge1xuICByZW5kZXIoKSB7XG4gICAgY29uc3QgeyB0aXRsZSwgaW50cm8sIGNyZWF0ZWRBdCwgdXNlcklELCBpZCwgc2x1ZyB9ID0gdGhpcy5wcm9wcy5ibG9nO1xuXG4gICAgcmV0dXJuIChcbiAgICAgIDxGcmFnbWVudD5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50IGlzLW1lZGl1bSBibG9nXCI+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJ0aXRsZSBoYXMtdGV4dC1jZW50ZXJlZFwiPnt0aXRsZX08L2gzPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwic3VidGl0bGUgaXMtNiBoYXMtdGV4dC1jZW50ZXJlZFwiPlxuICAgICAgICAgICAgICA8TGluayBocmVmPVwiI1wiPlxuICAgICAgICAgICAgICAgIDxhPkBqb2xseWdyaW48L2E+XG4gICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgICAgPERhdGVGb3JtYXR0ZXIgdGltZXN0YW1wPXtjcmVhdGVkQXR9IC8+XG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwiaGFzLXRleHQtY2VudGVyZWQgaXMtc2l6ZS01IGJsb2ctaW50cm9cIj57aW50cm99PC9wPlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImlzLXB1bGxlZC1yaWdodCBpcy1zaXplLTdcIj5cbiAgICAgICAgICAgICAgPExpbmsgYXM9e2AvYmxvZy8ke3NsdWd9YH0gaHJlZj17YC9ibG9nP2lkPSR7aWR9YH0+XG4gICAgICAgICAgICAgICAgPGE+UmVhZCBNb3JlPC9hPlxuICAgICAgICAgICAgICA8L0xpbms+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIC5ibG9nIHtcbiAgICAgICAgICAgIHBhZGRpbmctYm90dG9tOiAycmVtO1xuICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkIHdoaXRlc21va2U7XG4gICAgICAgICAgfVxuICAgICAgICAgIC5ibG9nLWludHJvIHtcbiAgICAgICAgICAgIG1hcmdpbi10b3A6IDJyZW07XG4gICAgICAgICAgfVxuICAgICAgICBgfTwvc3R5bGU+XG4gICAgICA8L0ZyYWdtZW50PlxuICAgICk7XG4gIH1cbn1cbiJdfQ== */\n/*@ sourceURL=/Users/dean/github/next-tutorial/social/components/BlogItem.js */"));
   }
 
@@ -238,23 +170,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _BlogItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BlogItem */ "./components/BlogItem.js");
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/components/BlogList.js";
 
 
-/* harmony default export */ __webpack_exports__["default"] = (props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, props.blogs.map(blog => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_BlogItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
+/* harmony default export */ __webpack_exports__["default"] = (props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, props.blogs.map(blog => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_BlogItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
   key: blog.id,
-  blog: blog,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
+  blog: blog
 }))));
 
 /***/ }),
@@ -272,16 +192,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! moment */ "moment");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/components/DateFormatter.js";
 
 
-/* harmony default export */ __webpack_exports__["default"] = (props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, " ", moment__WEBPACK_IMPORTED_MODULE_1___default.a.unix(props.timestamp).fromNow()));
+/* harmony default export */ __webpack_exports__["default"] = (props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " ", moment__WEBPACK_IMPORTED_MODULE_1___default.a.unix(props.timestamp).fromNow()));
 
 /***/ }),
 
@@ -1179,7 +1092,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_BlogList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/BlogList */ "./components/BlogList.js");
 
 
-var _jsxFileName = "/Users/dean/github/next-tutorial/social/pages/index.js";
 
 
 
@@ -1232,69 +1144,12 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_4__["Component"] {
   }
 
   render() {
-    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 61
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 62
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("title", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 63
-      },
-      __self: this
-    }, "Dean's Blog", " - Home Page")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("hr", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 66
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 69
-      },
-      __self: this
-    }, "From Props"), this.props.blogs.map(blog => react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
-      key: blog.id,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 71
-      },
-      __self: this
-    }, blog.title))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("hr", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 75
-      },
-      __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-      className: "jas",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 77
-      },
-      __self: this
+    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("title", null, "Dean's Blog", " - Home Page")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h2", null, "From Props"), this.props.blogs.map(blog => react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("li", {
+      key: blog.id
+    }, blog.title))), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: "jas"
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_BlogList__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      blogs: this.state.blogs,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 78
-      },
-      __self: this
+      blogs: this.state.blogs
     })));
   }
 

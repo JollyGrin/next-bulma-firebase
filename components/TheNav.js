@@ -16,7 +16,7 @@ export default () => (
       </a>
     </div>
 
-    <div id="navbarBasicExample" className="navbar-menu">
+    <div id="navbarBasicExample" className="navbar-menu is-active">
       <div className="navbar-start">
         <Link href="/">
           <a className="navbar-item">Home</a>
