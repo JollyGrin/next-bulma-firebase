@@ -8,6 +8,16 @@ const path = require('path');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
+  serverRuntimeConfig: {
+    // only available on the serverside
+    secret: '123'
+  },
+
+  publicRuntimeConfig: {
+    // this will be available on both server & client
+    NProgressShowSpinner: false
+  },
+
   webpack: config => {
     config.plugins = config.plugins || [];
 

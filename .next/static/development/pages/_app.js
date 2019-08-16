@@ -22,9 +22,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! nprogress */ "./node_modules/nprogress/nprogress.js");
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _TheHead__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./TheHead */ "./components/TheHead.js");
-/* harmony import */ var _TheNav__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TheNav */ "./components/TheNav.js");
-/* harmony import */ var _TheFooter__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./TheFooter */ "./components/TheFooter.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/config */ "./node_modules/next-server/dist/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _TheHead__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TheHead */ "./components/TheHead.js");
+/* harmony import */ var _TheNav__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./TheNav */ "./components/TheNav.js");
+/* harmony import */ var _TheFooter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./TheFooter */ "./components/TheFooter.js");
 
 
 
@@ -37,6 +39,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+var _getConfig = next_config__WEBPACK_IMPORTED_MODULE_9___default()(),
+    serverRuntimeConfig = _getConfig.serverRuntimeConfig,
+    publicRuntimeConfig = _getConfig.publicRuntimeConfig;
+
+nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.configure({
+  showSpinner: publicRuntimeConfig.NProgressShowSpinner
+});
+
+next_router__WEBPACK_IMPORTED_MODULE_7___default.a.onRouteChangeStart = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.start();
+};
+
+next_router__WEBPACK_IMPORTED_MODULE_7___default.a.onRouteChangeComplete = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.done();
+};
+
+next_router__WEBPACK_IMPORTED_MODULE_7___default.a.onRouteChangeError = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_8___default.a.done();
+};
 
 var Page =
 /*#__PURE__*/
@@ -54,11 +77,15 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "jsx-3511198362" + " " + "site"
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_TheHead__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_TheNav__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("main", {
-        className: "jsx-3511198362" + " " + "container"
-      }, this.props.children), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_TheFooter__WEBPACK_IMPORTED_MODULE_11__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_TheHead__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_TheNav__WEBPACK_IMPORTED_MODULE_11__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("main", {
+        className: "jsx-3511198362" + " " + "section"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "jsx-3511198362" + " " + "columns"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "jsx-3511198362" + " " + "column is-10 is-offset-1 is-mobile"
+      }, this.props.children))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_TheFooter__WEBPACK_IMPORTED_MODULE_12__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_5___default.a, {
         id: "3511198362"
-      }, ".site.jsx-3511198362{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:100vh;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}main.jsx-3511198362{-webkit-flex:1;-ms-flex:1;flex:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZWFuL2dpdGh1Yi9uZXh0LXR1dG9yaWFsL3NvY2lhbC9jb21wb25lbnRzL1BhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZW9CLEFBRzBCLEFBS04saUNBQ1QseUNBTG1CLGlCQUNLLDhFQUN4QiIsImZpbGUiOiIvVXNlcnMvZGVhbi9naXRodWIvbmV4dC10dXRvcmlhbC9zb2NpYWwvY29tcG9uZW50cy9QYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBSb3V0ZXIgZnJvbSAnbmV4dC9yb3V0ZXInO1xuaW1wb3J0IE5Qcm9ncmVzcyBmcm9tICducHJvZ3Jlc3MnO1xuaW1wb3J0IFRoZUhlYWQgZnJvbSAnLi9UaGVIZWFkJztcbmltcG9ydCBUaGVOYXYgZnJvbSAnLi9UaGVOYXYnO1xuaW1wb3J0IFRoZUZvb3RlciBmcm9tICcuL1RoZUZvb3Rlcic7XG5cbmNsYXNzIFBhZ2UgZXh0ZW5kcyBDb21wb25lbnQge1xuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2l0ZVwiPlxuICAgICAgICA8VGhlSGVhZCAvPlxuICAgICAgICA8VGhlTmF2IC8+XG4gICAgICAgIDxtYWluIGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPnt0aGlzLnByb3BzLmNoaWxkcmVufTwvbWFpbj5cbiAgICAgICAgPFRoZUZvb3RlciAvPlxuICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgLnNpdGUge1xuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgICAgICB9XG4gICAgICAgICAgbWFpbiB7XG4gICAgICAgICAgICBmbGV4OiAxO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgPC9kaXY+XG4gICAgKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBQYWdlO1xuIl19 */\n/*@ sourceURL=/Users/dean/github/next-tutorial/social/components/Page.js */"));
+      }, ".site.jsx-3511198362{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;min-height:100vh;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}main.jsx-3511198362{-webkit-flex:1;-ms-flex:1;flex:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZWFuL2dpdGh1Yi9uZXh0LXR1dG9yaWFsL3NvY2lhbC9jb21wb25lbnRzL1BhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0NvQixBQUcwQixBQUtOLGlDQUNULHlDQUxtQixpQkFDSyw4RUFDeEIiLCJmaWxlIjoiL1VzZXJzL2RlYW4vZ2l0aHViL25leHQtdHV0b3JpYWwvc29jaWFsL2NvbXBvbmVudHMvUGFnZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUm91dGVyIGZyb20gJ25leHQvcm91dGVyJztcbmltcG9ydCBOUHJvZ3Jlc3MgZnJvbSAnbnByb2dyZXNzJztcbmltcG9ydCBnZXRDb25maWcgZnJvbSAnbmV4dC9jb25maWcnO1xuaW1wb3J0IFRoZUhlYWQgZnJvbSAnLi9UaGVIZWFkJztcbmltcG9ydCBUaGVOYXYgZnJvbSAnLi9UaGVOYXYnO1xuaW1wb3J0IFRoZUZvb3RlciBmcm9tICcuL1RoZUZvb3Rlcic7XG5cbmNvbnN0IHsgc2VydmVyUnVudGltZUNvbmZpZywgcHVibGljUnVudGltZUNvbmZpZyB9ID0gZ2V0Q29uZmlnKCk7XG5cbk5Qcm9ncmVzcy5jb25maWd1cmUoeyBzaG93U3Bpbm5lcjogcHVibGljUnVudGltZUNvbmZpZy5OUHJvZ3Jlc3NTaG93U3Bpbm5lciB9KTtcblxuUm91dGVyLm9uUm91dGVDaGFuZ2VTdGFydCA9ICgpID0+IHtcbiAgTlByb2dyZXNzLnN0YXJ0KCk7XG59O1xuXG5Sb3V0ZXIub25Sb3V0ZUNoYW5nZUNvbXBsZXRlID0gKCkgPT4ge1xuICBOUHJvZ3Jlc3MuZG9uZSgpO1xufTtcblxuUm91dGVyLm9uUm91dGVDaGFuZ2VFcnJvciA9ICgpID0+IHtcbiAgTlByb2dyZXNzLmRvbmUoKTtcbn07XG5cbmNsYXNzIFBhZ2UgZXh0ZW5kcyBDb21wb25lbnQge1xuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2l0ZVwiPlxuICAgICAgICA8VGhlSGVhZCAvPlxuICAgICAgICA8VGhlTmF2IC8+XG4gICAgICAgIDxtYWluIGNsYXNzTmFtZT1cInNlY3Rpb25cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtbnNcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1uIGlzLTEwIGlzLW9mZnNldC0xIGlzLW1vYmlsZVwiPlxuICAgICAgICAgICAgICB7dGhpcy5wcm9wcy5jaGlsZHJlbn1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L21haW4+XG4gICAgICAgIDxUaGVGb290ZXIgLz5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIC5zaXRlIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgfVxuICAgICAgICAgIG1haW4ge1xuICAgICAgICAgICAgZmxleDogMTtcbiAgICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDwvZGl2PlxuICAgICk7XG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgUGFnZTtcbiJdfQ== */\n/*@ sourceURL=/Users/dean/github/next-tutorial/social/components/Page.js */"));
     }
   }]);
 
@@ -6284,6 +6311,37 @@ function getRouteRegex(normalizedRoute) {
 }
 
 exports.getRouteRegex = getRouteRegex;
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/runtime-config.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/runtime-config.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _defineProperty = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js"));
+
+(0, _defineProperty["default"])(exports, "__esModule", {
+  value: true
+});
+var runtimeConfig;
+
+exports["default"] = function () {
+  return runtimeConfig;
+};
+
+function setConfig(configValue) {
+  runtimeConfig = configValue;
+}
+
+exports.setConfig = setConfig;
 
 /***/ }),
 
