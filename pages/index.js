@@ -17,24 +17,6 @@ export default class Index extends Component {
     this.collectionRef = firestore.collection('blogs');
   }
 
-  static async getInitialProps() {
-    let blogs = [];
-    await firestore
-      .collection('blogs')
-      .get()
-      .then(documentSet => {
-        documentSet.forEach(doc => {
-          blogs.push({
-            id: doc.id,
-            ...doc.data()
-          });
-        });
-        return blogs;
-      });
-
-    return { blogs };
-  }
-
   blogListener = () => {
     fetchCollectionDocs('blogs').then(blogs => {
       this.setState({ blogs });
@@ -63,20 +45,7 @@ export default class Index extends Component {
           <title>{process.env.PROJECT_NAME} - Home Page</title>
         </Head>
 
-        <hr />
-
-        <div>
-          <h2>From Props</h2>
-          {this.props.blogs.map(blog => (
-            <li key={blog.id}>{blog.title}</li>
-          ))}
-        </div>
-
-        <hr />
-
-        <div className="jas">
-          <BlogList blogs={this.state.blogs} />
-        </div>
+        <BlogList blogs={this.state.blogs} />
       </div>
     );
   }

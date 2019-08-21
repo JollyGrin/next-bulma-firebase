@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Link from 'next/link';
 import DateFormatter from './DateFormatter';
+import UserInfo from './UserInfo';
 
 export default class BlogItem extends Component {
   render() {
@@ -11,12 +12,10 @@ export default class BlogItem extends Component {
         <div className="content is-medium blog">
           <div>
             <h3 className="title has-text-centered">{title}</h3>
-            <p className="subtitle is-6 has-text-centered">
-              <Link href="#">
-                <a>@jollygrin</a>
-              </Link>
+            <div className="subtitle is-6 has-text-centered">
+              <UserInfo userID={userID} />
               <DateFormatter timestamp={createdAt} />
-            </p>
+            </div>
           </div>
           <p className="has-text-centered is-size-5 blog-intro">{intro}</p>
           <div>

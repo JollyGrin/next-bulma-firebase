@@ -21,8 +21,8 @@ export default () => (
         <Link href="/">
           <a className="navbar-item">Home</a>
         </Link>
-        <Link href="/about">
-          <a className="navbar-item">About</a>
+        <Link href="/blog/new">
+          <a className="navbar-item">Create New</a>
         </Link>
       </div>
 

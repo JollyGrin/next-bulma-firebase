@@ -10,6 +10,12 @@ app
   .then(() => {
     const server = express();
 
+    server.get('/blog/new', (req, res) => {
+      const actualPage = '/blog/new';
+      const query = {};
+      app.render(req, res, actualPage, query);
+    });
+
     server.get('/blog/:slug', (req, res) => {
       const actualPage = '/blog';
       const query = { slug: req.params.slug };
