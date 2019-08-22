@@ -6,6 +6,8 @@ import BlogShow from '../../components/BlogShow';
 import BlogEdit from '../../components/BlogEdit';
 
 class Blog extends Component {
+  _isMounted = false;
+
   state = {
     blog: null,
     editMode: false
@@ -29,11 +31,16 @@ class Blog extends Component {
       fieldName: 'slug',
       value: this.blogSlug
     }).then(blog => {
-      this.setState({ blog });
+      // set the state
+
+      if (this._isMounted) {
+        this.setState({ blog });
+      }
     });
   };
 
   componentDidMount() {
+    this._isMounted = true;
     this.blogListener();
 
     this.unsubscribe = firestore
@@ -45,6 +52,7 @@ class Blog extends Component {
   }
 
   componentWillUnmount() {
+    this._isMounted = false;
     this.unsubscribe();
   }
 
@@ -53,7 +61,7 @@ class Blog extends Component {
       return <div>Loading Content</div>;
     }
 
-    if (0) {
+    if (this.state.editMode) {
       return <BlogEdit />;
     }
 
