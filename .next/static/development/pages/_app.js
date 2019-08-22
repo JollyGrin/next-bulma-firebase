@@ -153,6 +153,9 @@ __webpack_require__.r(__webpack_exports__);
       rel: "stylesheet",
       type: "text/css",
       href: "/static/css/nprogress.css"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+      href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+      rel: "stylesheet"
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "This is a test"))
   );
 });

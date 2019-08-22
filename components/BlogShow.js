@@ -23,7 +23,12 @@ export default class BlogShow extends Component {
         </Head>
         <div className="content is-medium blog">
           <div>
-            <h3 className="title has-text-centered">{title}</h3>
+            <h1 className="title has-text-centered">
+              {title} {` `}
+              <span className="pointer" onClick={this.props.toggleEditMode}>
+                <i className="material-icons">edit</i>
+              </span>
+            </h1>
             <div className="subtitle is-6">
               <UserInfo userID={userID} />
             </div>

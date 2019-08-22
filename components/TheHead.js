@@ -11,6 +11,10 @@ export default () => (
     />
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/nprogress.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>This is a test</title>
   </Head>
 );

@@ -3,10 +3,12 @@ import { withRouter } from 'next/router';
 import { firestore } from '../../lib/db';
 import { fetchDocumentFromCollectionByFieldName } from '../../lib/utility';
 import BlogShow from '../../components/BlogShow';
+import BlogEdit from '../../components/BlogEdit';
 
 class Blog extends Component {
   state = {
-    blog: null
+    blog: null,
+    editMode: false
   };
 
   constructor(props) {
@@ -14,6 +16,12 @@ class Blog extends Component {
     this.blogSlug = this.props.router.query.slug;
     this.collectionName = 'blogs';
   }
+
+  toggleEditMode = () => {
+    this.setState(prevState => ({
+      editMode: !prevState.editMode
+    }));
+  };
 
   blogListener = () => {
     fetchDocumentFromCollectionByFieldName({
@@ -45,17 +53,13 @@ class Blog extends Component {
       return <div>Loading Content</div>;
     }
 
-    const {
-      title,
-      intro,
-      content,
-      createdAt,
-      userID,
-      id,
-      slug
-    } = this.state.blog;
+    if (0) {
+      return <BlogEdit />;
+    }
 
-    return <BlogShow blog={this.state.blog} />;
+    return (
+      <BlogShow blog={this.state.blog} toggleEditMode={this.toggleEditMode} />
+    );
   }
 }
 

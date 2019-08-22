@@ -1,17 +1,32 @@
 import React, { Component, Fragment } from 'react';
+import moment from 'moment';
+import slugify from 'slugify';
+import Router from 'next/router';
 
 export default class BlogCreate extends Component {
   titleRef = React.createRef();
+
   introRef = React.createRef();
+
   contentRef = React.createRef();
 
-  cancelled = () => {
-    console.log('cancelled');
+  cancel = () => {
+    Router.push('/');
   };
 
   save = () => {
     console.log('saved');
-    console.log(this.titleRef.current.value);
+
+    const newBlog = {
+      title: this.titleRef.current.value,
+      slug: slugify(this.titleRef.current.value),
+      intro: this.introRef.current.value,
+      content: this.contentRef.current.value,
+      createdAt: moment().unix(),
+      userID: 'gSwzGOq8spM02Ury9tRS' // TODO FIX ME
+    };
+
+    this.props.addBlog(newBlog);
   };
 
   render() {
@@ -62,7 +77,7 @@ export default class BlogCreate extends Component {
               </button>
             </div>
             <div className="control">
-              <button className="button is-text" onClick={this.cancelled}>
+              <button className="button is-text" onClick={this.cancel}>
                 Cancel
               </button>
             </div>

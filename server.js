@@ -22,9 +22,7 @@ app
       app.render(req, res, actualPage, query);
     });
 
-    server.get('*', (req, res) => {
-      return handle(req, res);
-    });
+    server.get('*', (req, res) => handle(req, res));
 
     server.listen(3000, err => {
       if (err) throw err;
