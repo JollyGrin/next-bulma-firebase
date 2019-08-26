@@ -1,41 +1,32 @@
 import Head from 'next/head';
-import { firestore } from '../lib/db';
+import base, { firestore } from '../lib/db';
 import React, { Component } from 'react';
-import {
-  fetchCollectionDocs,
-  fetchDocumentFromCollection
-} from '../lib/utility';
 import BlogList from '../components/BlogList';
 
 export default class Index extends Component {
-  state = {
-    blogs: []
-  };
-
   constructor(props) {
     super(props);
-    this.collectionRef = firestore.collection('blogs');
+    this.state = { blogs: [] };
   }
 
-  blogListener = () => {
-    fetchCollectionDocs('blogs').then(blogs => {
-      this.setState({ blogs });
-    });
-  };
-
-  // subscribe to firestore realtime for changes
   componentDidMount() {
-    this.unsubscribe = this.collectionRef.onSnapshot(
-      this.blogListener,
-      error => {
-        console.log(`Error on Firebase Snapshot: ${error}`);
-      }
-    );
+    this.ref = base
+      .get('blogs', {
+        context: this,
+        withIds: true,
+        query: ref => ref.orderBy('createdAt', 'desc')
+      })
+      .then(blogs => {
+        this.setState({ blogs });
+      })
+      .catch(error => {
+        console.log(`There was an error on fetching the blogs ${error}`);
+      });
   }
 
   // unsubscribe from firestore listener
   componentWillUnmount() {
-    this.unsubscribe();
+    base.removeBinding(this.ref);
   }
 
   render() {
