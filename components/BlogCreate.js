@@ -19,7 +19,7 @@ export default class BlogCreate extends Component {
 
     const newBlog = {
       title: this.titleRef.current.value,
-      slug: slugify(this.titleRef.current.value),
+      slug: slugify(this.titleRef.current.value, { lower: true }),
       intro: this.introRef.current.value,
       content: this.contentRef.current.value,
       createdAt: moment().unix(),
